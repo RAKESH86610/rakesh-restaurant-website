@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodwebsite</title>
+    <style>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        *{
+            padding: 0;
+           margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            gap: 300px;
+            /* margin-bottom :2.5rem ; */
+            padding: 20px;
+           border: 2px solid gray;
+           width: 96%;
+           border-radius:20px;
+           position: fixed;
+           background-color: aliceblue;
+           
+
+         
+        }
+        .navbarleft{
+            font-size:25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: orange;
+       
+        }
+        .navbarmiddle{
+            display: flex;
+            gap: 30px;
+            font-size:20px;
+    
+            
+
+        }
+        .navbarmiddle a:hover{
+            
+            border-radius:20px;
+            width: 100px;
+            align-items: center;
+            text-align: center;
+            padding: 3px;
+            background-color: orange;
+            border-style: none;
+        }
+        .navbarright{
+            display: flex;
+            gap: 40px;
+            padding: 10px;
+            cursor: pointer;
+        }
+       
+        .navbarmiddle a:link{
+            text-decoration: none;
+        }
+        
+        .homepagetheme{
+            width: 100%; 
+            height: 700px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            margin-top: 100px;
+        }
+        .demoimages{
+            display: flex;
+            gap: 90px;
+            margin-left: 1rem;
+           
+        
+        }
+        .demoimages img{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+        }
+        .ournewsletter>input{
+            width:150px;
+            height: 20px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .ournewsletter>button{
+            width:180px;
+            height: 45px;
+            border-radius: 15px;
+            padding: 10px;
+            background-color: orange;
+            border-style: none;
+        }
+        .ournewsletter>button:hover{
+            outline:2px solid white;
+            outline-offset: 10px;
+        }
+        .footerflex{
+            display: flex;
+            gap: 350px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 30px;
+          
+            position: relative;
+            
+        }
+        
+        .accountform{
+            border-radius: 10px;
+            height: 25px;
+        }
+        .googlemap iframe{
+           border-radius: 20px;
+           width: 350px;
+           height: 200px;
+           position: absolute;
+           top: 110px;
+           cursor: pointer;
+        }
+        .topup{
+            position: absolute;
+            color: white;
+            right: 50px;
+            bottom:50px;
+            background-color:orange;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 6px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="navbarleft">
+         <span>HydBiryani</span>
+        </div>
+        <div class="navbarmiddle" >
+          <a href="#">Home</a>
+          
+          Account:<select name="" id="" class="accountform">
+            <option value="None">Select</option>
+            <option value="">My Orders</option>
+            <option value="">My Wallet</option>
+            <option value="">My Profile</option>            
+            <option value="">Log Out</option>            
+
+          </select>
+          <a href="aboutus.html">About_us</a>
+          <a href="contactus.html">Contact_us</a>
+        </div>
+        <div class="navbarright">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-sharp fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+
+        </div>
+
+    </header>
+    <!-- <img src="homepagetheme.jpeg" alt="" class="homepagetheme"> -->
+    <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1188&q=80" alt="" class="homepagetheme">
+   
+ <p style="text-align:center;font-size:30px;font-weight: bold;">OUR MENU</p>
+    <div class="demoimages">
+        <img src="pexels-photo-14701403.jpeg" alt="" >
+        <img src="pexels-photo-1352274.jpeg" alt="">
+        <img src="pexels-pixabay-60616.jpg" alt="">
+        <img src="pexels-dhiraj-jain-12737656.jpg" alt="">
+
+
+    </div>
+    <br><br>
+    <footer>
+       
+       <p style="text-align: center;font-size: 30px;">HydBiryani</p>
+       <div class="footerflex">
+       <div class="ournewsletter">
+        <p style="font-size:20px">Our Newsletter</p>
+        <input type="email" placeholder="Your email" style="padding:12px;text-align: center;">
+        <br><br>
+        <button style="cursor: pointer;">SUBSCRIBE</button>
+       </div>
+       <div class="help">
+        <p> <b> HELP </b></p>
+        <a href="contactus.html" style="text-decoration: none;color:white;">Contact Us</a>
+        <p>FAQs</p>
+        <p>Gift Card Balances</p>
+       
+       </div>
+       <div class="googlemap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243368.87025611984!2d78.37129142540265!3d17.619888339565012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a0f8cf1fd1b%3A0x386e919f25da1d16!2sParadise%20Biryani%20%7C%20Secunderabad!5e0!3m2!1sen!2sin!4v1682179538246!5m2!1sen!2sin" width="400px" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+    </div>
+    <br>
+    <p style="text-align:center;">Copyright &copy; 2023. Designed by Rakesh</p>
+     <img src="cards.png" alt=""style="padding-left:44.5%">
+     <a href="#top" class="topup"  ><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+    
+    
+    <script src="https://kit.fontawesome.com/cbebe4a82b.js" crossorigin="anonymous">
+        
+    </script>
+    
+</body>
+</html>
